@@ -11,13 +11,14 @@ import com.deutsche.tradeservice.validator.DatePresentOrFutureValidator;
 import jakarta.validation.Constraint;
 import jakarta.validation.Payload;
 
-
 @Target({ ElementType.FIELD, ElementType.METHOD, ElementType.PARAMETER })
 @Retention(RetentionPolicy.RUNTIME)
 @Constraint(validatedBy = DatePresentOrFutureValidator.class)
 @Documented
 public @interface DatePresentOrFutureConstraint {
-    String message() default "Date has to be today or future date";
-    Class<?>[] groups() default {};
-    Class<? extends Payload>[] payload() default {};
+	String message() default "Date has to be today or future date";
+
+	Class<?>[] groups() default {};
+
+	Class<? extends Payload>[] payload() default {};
 }

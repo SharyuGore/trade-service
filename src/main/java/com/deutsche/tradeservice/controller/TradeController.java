@@ -1,7 +1,5 @@
 package com.deutsche.tradeservice.controller;
 
-import java.time.LocalDate;
-import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,7 +14,6 @@ import org.springframework.web.bind.annotation.RestController;
 import com.deutsche.tradeservice.data.TradeUI;
 import com.deutsche.tradeservice.mapper.TradeMapper;
 import com.deutsche.tradeservice.model.Trade;
-import com.deutsche.tradeservice.model.TradeId;
 import com.deutsche.tradeservice.service.TradeService;
 
 import jakarta.validation.Valid;

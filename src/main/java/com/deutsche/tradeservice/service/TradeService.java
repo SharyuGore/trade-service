@@ -72,7 +72,7 @@ public class TradeService {
 	}
 
 	public List<TradeUI> getAllTradeUI() {
-		
+
 		List<Trade> trades = tradeRepository.findAll();
 		return trades.stream().map(trade -> TradeMapper.getTradeUI(trade)).collect(Collectors.toList());
 

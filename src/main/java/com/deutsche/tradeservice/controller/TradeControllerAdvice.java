@@ -12,7 +12,6 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 
 import jakarta.validation.ConstraintViolation;
 import jakarta.validation.Path;
-import jakarta.validation.ValidationException;
 import lombok.Data;
 
 @ControllerAdvice
@@ -36,7 +35,6 @@ public class TradeControllerAdvice {
 		return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(dto);
 
 	}
-
 
 	@Data
 	public static class ErrorDto {

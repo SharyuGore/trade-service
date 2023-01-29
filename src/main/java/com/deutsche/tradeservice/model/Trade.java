@@ -26,6 +26,5 @@ public class Trade {
 	private LocalDate maturityDate;
 	private LocalDate createdDate;
 	private Boolean expired;
-	
-	
+
 }
